@@ -51,14 +51,14 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-slate-300">
               <Globe className="w-3.5 h-3.5 text-[#2CA6E0]" />
-              <span className="font-medium text-slate-200">HXRAO Overseas Exports Private Limited</span>
+              <span className="font-medium text-slate-200">HXRAO Overseas Exports</span>
               <span className="text-slate-400">| Import &amp; Export Globally</span>
             </span>
           </div>
 
           <div className="flex items-center gap-6">
             <a 
-              href="tel:8447539812" 
+              href="tel:+918447539812" 
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#2CA6E0]" />
@@ -66,7 +66,7 @@ export default function Navbar() {
             </a>
             <span className="text-white/20">/</span>
             <a 
-              href="tel:7428809509" 
+              href="tel:+917428809509" 
               className="flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <span>+91 74288 09509</span>
@@ -199,7 +199,7 @@ export default function Navbar() {
                     <div className="font-bold text-[#0B2A52] uppercase tracking-wider text-[11px]">
                       Quick Contact:
                     </div>
-                    <a href="tel:8447539812" className="flex items-center gap-2 hover:text-[#1267B1]">
+                    <a href="tel:+918447539812" className="flex items-center gap-2 hover:text-[#1267B1]">
                       <Phone className="w-3.5 h-3.5 text-[#1267B1]" />
                       <span>+91 84475 39812 / 74288 09509</span>
                     </a>

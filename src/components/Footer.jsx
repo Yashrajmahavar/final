@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col">
             <Logo variant="light" size="lg" />
             <p className="mt-5 text-slate-300 text-sm leading-relaxed max-w-sm">
-              HXRAO Overseas Exports Private Limited is a trusted import and export company, primarily focused on delivering quality products to international markets with reliability, integrity, and operational excellence.
+              HXRAO Overseas Exports is an import and export business, primarily focused on sourcing quality products for international markets with reliability, integrity, and professional service.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 border border-white/15 text-sky-200">
@@ -32,7 +32,7 @@ export default function Footer() {
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 border border-white/15 text-emerald-300">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Quality Assured</span>
+                <span>Quality-Focused</span>
               </span>
             </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
               </span>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/social inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-[#0A66C2] text-white border border-white/15 transition-all duration-300 hover:scale-105 shadow-sm text-xs font-semibold"
@@ -54,7 +54,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/hxrao.overseasexports?stkn=MXIwZGU0ajRoZTZidw%3D%3D&utm_source=qr"
+                  href="https://www.instagram.com/hxrao.overseasexports/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/social inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/10 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-white border border-white/15 transition-all duration-300 hover:scale-105 shadow-sm text-xs font-semibold"
@@ -150,7 +150,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Registered Office & Contact (3 cols) */}
+          {/* Col 4: Head Office & Contact (3 cols) */}
           <div className="lg:col-span-3">
             <h4 className="font-heading font-bold text-base text-white tracking-wide uppercase text-xs mb-5 border-l-2 border-[#2CA6E0] pl-2.5">
               Head Office
@@ -166,10 +166,10 @@ export default function Footer() {
               <li className="flex items-center gap-3 text-slate-300">
                 <Phone className="w-4 h-4 text-[#2CA6E0] flex-shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:8447539812" className="hover:text-white transition-colors">
+                  <a href="tel:+918447539812" className="hover:text-white transition-colors">
                     +91 84475 39812
                   </a>
-                  <a href="tel:7428809509" className="hover:text-white transition-colors">
+                  <a href="tel:+917428809509" className="hover:text-white transition-colors">
                     +91 74288 09509
                   </a>
                 </div>
@@ -188,13 +188,13 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            &copy; {currentYear} HXRAO Overseas Exports Private Limited. All rights reserved.
+            &copy; {currentYear} HXRAO Overseas Exports. All rights reserved.
           </p>
           
           <div className="flex items-center gap-5">
             <div className="flex items-center gap-2">
               <a
-                href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#0A66C2] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200"
@@ -203,7 +203,7 @@ export default function Footer() {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="https://www.instagram.com/hxrao.overseasexports?stkn=MXIwZGU0ajRoZTZidw%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/hxrao.overseasexports/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/10 hover:bg-[#E1306C] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200"

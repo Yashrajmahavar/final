@@ -53,7 +53,7 @@ export default function CTASection({ className = '' }) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-5 text-base sm:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed"
           >
-            Let's discuss your product requirements and build a reliable supply partnership. Our dedicated desk handles end-to-end specifications, documentation, and international shipping.
+            Let's discuss your product requirements and how we can support sourcing, documentation, and shipping according to the agreed order.
           </motion.p>
 
           {/* Buttons */}
@@ -84,7 +84,7 @@ export default function CTASection({ className = '' }) {
           {/* Quick Direct Contacts */}
           <div className="mt-10 pt-8 border-t border-white/15 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-slate-300">
             <a 
-              href="tel:8447539812" 
+              href="tel:+918447539812" 
               className="inline-flex items-center gap-2 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4 text-[#2CA6E0]" />
@@ -92,7 +92,7 @@ export default function CTASection({ className = '' }) {
             </a>
             <span className="hidden sm:inline text-white/30">•</span>
             <a 
-              href="tel:7428809509" 
+              href="tel:+917428809509" 
               className="inline-flex items-center gap-2 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4 text-[#2CA6E0]" />

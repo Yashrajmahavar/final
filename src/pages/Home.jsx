@@ -28,33 +28,33 @@ import { productsData } from '../data/products';
 
 export default function Home() {
   const trustItems = [
-    { icon: Handshake, title: "Trusted Partnerships", desc: "Long-term relationships built on integrity" },
-    { icon: Globe2, title: "Global Trade Network", desc: "Extensive import & export reach" },
-    { icon: ShieldCheck, title: "Premium Quality Products", desc: "Strict verification & grade adherence" },
-    { icon: Clock, title: "On-Time Delivery", desc: "Streamlined maritime & air logistics" },
-    { icon: BadgePercent, title: "Competitive Pricing", desc: "Optimized direct sourcing value" }
+    { icon: Handshake, title: "Professional Partnerships", desc: "Long-term relationships built on integrity" },
+    { icon: Globe2, title: "International Trade", desc: "Import and export support for buyers" },
+    { icon: ShieldCheck, title: "Quality-Focused Sourcing", desc: "Specifications confirmed before quotation" },
+    { icon: Clock, title: "Coordinated Logistics", desc: "Maritime and air freight options" },
+    { icon: BadgePercent, title: "Competitive Pricing", desc: "Direct sourcing discussed with buyers" }
   ];
 
   const whyChooseUs = [
     {
       icon: ShieldCheck,
-      title: "Quality Assurance",
-      desc: "Every product consignment adheres to international export specifications and quality verification standards before dispatch."
+      title: "Quality Focus",
+      desc: "Product specifications and applicable documentation are confirmed with buyers before quotation and dispatch."
     },
     {
       icon: Globe2,
-      title: "Global Network",
-      desc: "Broad international freight corridors and established forwarding channels ensuring reliable cross-border transactions."
+      title: "International Trade",
+      desc: "Support for cross-border enquiries, freight options, and coordination with forwarding partners as required."
     },
     {
       icon: Layers,
       title: "Reliable Sourcing",
-      desc: "Dependable tie-ups with verified manufacturers, processing plants, and certified commodity aggregators."
+      desc: "Sourcing options from manufacturers, processors, and aggregators are discussed according to buyer requirements."
     },
     {
       icon: Clock,
-      title: "Timely Delivery",
-      desc: "Proactive supply chain scheduling, expedited export documentation, and responsive tracking for on-time arrivals."
+      title: "Coordinated Dispatch",
+      desc: "Supply schedules, export documentation, and tracking are arranged according to the agreed shipment."
     },
     {
       icon: Handshake,
@@ -110,7 +110,7 @@ export default function Home() {
 
                 {/* Supporting Text */}
                 <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-200 leading-relaxed max-w-2xl font-normal">
-                  HXRAO Overseas Exports Private Limited is a trusted import and export company, primarily focused on delivering quality products to international markets.
+                  HXRAO Overseas Exports is an import and export business, primarily focused on sourcing quality products for international markets.
                 </p>
 
                 {/* Action Buttons */}
@@ -139,7 +139,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-wider text-sky-200 font-semibold">Integrity</div>
-                    <div className="text-sm sm:text-base font-bold mt-0.5">Verified Sourcing</div>
+                    <div className="text-sm sm:text-base font-bold mt-0.5">Responsible Sourcing</div>
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-wider text-sky-200 font-semibold">Network</div>
@@ -160,7 +160,7 @@ export default function Home() {
                 <div className="flex items-center justify-between pb-5 border-b border-white/15">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-xl bg-white/95 p-1 flex items-center justify-center flex-shrink-0 shadow-sm">
-                      <img src="/logo.png" alt="HXRAO Official Logo" className="w-full h-full object-contain" />
+                      <img src="/logo.png" alt="HXRAO Overseas Exports logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <h4 className="font-heading font-bold text-base leading-none">HXRAO Exports</h4>
@@ -177,7 +177,7 @@ export default function Home() {
                     <CheckCircle2 className="w-5 h-5 text-[#2CA6E0] flex-shrink-0 mt-0.5" />
                     <div>
                       <h5 className="font-bold text-sm text-white">Quality Products</h5>
-                      <p className="text-xs text-slate-300 mt-0.5">Comprehensive grade verification and export packaging.</p>
+                      <p className="text-xs text-slate-300 mt-0.5">Specifications discussed with buyers; packing arranged as agreed.</p>
                     </div>
                   </div>
 
@@ -301,7 +301,7 @@ export default function Home() {
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="bg-white/95 backdrop-blur-md rounded-2xl p-4 border border-white/80 shadow-lg flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img src="/logo.png" alt="HXRAO Official Logo" className="w-12 h-12 object-contain flex-shrink-0" />
+                      <img src="/logo.png" alt="HXRAO Overseas Exports logo" className="w-12 h-12 object-contain flex-shrink-0" />
                       <div>
                         <div className="text-[10px] font-bold text-[#1267B1] uppercase tracking-wider">Trading Foundation</div>
                         <div className="font-heading font-extrabold text-[#0B2A52] text-sm sm:text-base">HXRAO Overseas Exports</div>
@@ -329,11 +329,11 @@ export default function Home() {
               </div>
 
               <h2 className="font-heading font-extrabold text-2xl sm:text-3xl md:text-4xl text-[#0B2A52] tracking-tight leading-tight">
-                Your Trusted Global Export Partner
+                A Focused Import and Export Partner
               </h2>
 
               <p className="mt-5 text-base sm:text-lg text-[#64748B] leading-relaxed">
-                HXRAO Overseas Exports Private Limited is a dynamic and client-focused export company committed to delivering quality products to international markets. We focus on reliable sourcing, professional service and long-term business relationships.
+                HXRAO Overseas Exports is a client-focused import and export business committed to sourcing quality products for international markets. We focus on reliable sourcing, professional service, and long-term business relationships.
               </p>
 
               {/* Small Glass Information Card as specified */}
@@ -386,7 +386,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="OUR COMMITMENT"
           title="Building Long-Term Partnerships"
-          subtitle="We focus on dependable execution, clear communication, and uncompromised quality standards."
+          subtitle="We focus on dependable execution, clear communication, and specifications confirmed before quotation."
           align="center"
         />
 
@@ -452,7 +452,7 @@ export default function Home() {
                     Seamless Freight &amp; Cross-Border Supply
                   </h3>
                   <p className="mt-3 text-sm text-slate-300">
-                    Facilitating reliable containerized trade corridors for key commodities and industrial goods with professional customs handling.
+                    Supporting containerized trade for commodities and industrial goods, with customs documentation arranged according to the shipment.
                   </p>
                   <div className="mt-6">
                     <Link
@@ -476,12 +476,12 @@ export default function Home() {
 
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-xl sm:text-2xl font-extrabold text-white">Reliable Supply</div>
-                <div className="text-xs text-sky-200 mt-1 uppercase tracking-wider font-semibold">Consistent Quality</div>
+                <div className="text-xs text-sky-200 mt-1 uppercase tracking-wider font-semibold">Clear Specifications</div>
               </div>
 
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-xl sm:text-2xl font-extrabold text-white">Quality Focus</div>
-                <div className="text-xs text-sky-200 mt-1 uppercase tracking-wider font-semibold">Strict Inspection</div>
+                <div className="text-xs text-sky-200 mt-1 uppercase tracking-wider font-semibold">Buyer-Confirmed Specs</div>
               </div>
 
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">

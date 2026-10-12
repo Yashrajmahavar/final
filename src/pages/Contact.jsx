@@ -27,7 +27,6 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
 
   const validate = () => {
     const errs = {};
@@ -47,12 +46,22 @@ export default function Contact() {
     e.preventDefault();
     if (!validate()) return;
 
-    setSubmitting(true);
-    // Simulate professional response submission without backend dependency
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-    }, 600);
+    const subject = encodeURIComponent(
+      formData.subject.trim() || `Export enquiry from ${formData.fullName}`
+    );
+    const body = encodeURIComponent(
+      [
+        `Name: ${formData.fullName}`,
+        `Company: ${formData.companyName || '—'}`,
+        `Email: ${formData.email}`,
+        `Phone: ${formData.phone}`,
+        `Subject: ${formData.subject || '—'}`,
+        '',
+        formData.message
+      ].join('\n')
+    );
+    window.location.href = `mailto:overseasexporters.hy@gmail.com?subject=${subject}&body=${body}`;
+    setSubmitted(true);
   };
 
   const handleChange = (e) => {
@@ -140,10 +149,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-heading font-bold text-sm text-[#0B2A52]">Phone Support</h4>
                   <div className="mt-1 space-y-1 text-sm text-slate-600">
-                    <a href="tel:8447539812" className="block hover:text-[#1267B1] font-medium transition-colors">
+                    <a href="tel:+918447539812" className="block hover:text-[#1267B1] font-medium transition-colors">
                       +91 84475 39812
                     </a>
-                    <a href="tel:7428809509" className="block hover:text-[#1267B1] font-medium transition-colors">
+                    <a href="tel:+917428809509" className="block hover:text-[#1267B1] font-medium transition-colors">
                       +91 74288 09509
                     </a>
                   </div>
@@ -163,7 +172,7 @@ export default function Contact() {
                     overseasexporters.hy@gmail.com
                   </a>
                   <span className="text-xs text-slate-400 mt-0.5 block">
-                    Replies typically within 24 business hours
+                    Enquiries are reviewed during business hours
                   </span>
                 </div>
               </GlassCard>
@@ -173,7 +182,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-sm text-[#0B2A52]">Registered Address</h4>
+                  <h4 className="font-heading font-bold text-sm text-[#0B2A52]">Office Address</h4>
                   <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                     Avantika Enclave, Rohini Sector-2,<br />
                     Delhi – 110085, India
@@ -189,7 +198,7 @@ export default function Contact() {
                   <h4 className="font-heading font-bold text-sm text-[#0B2A52]">Business Hours</h4>
                   <p className="mt-1 text-sm text-slate-600 leading-relaxed">
                     Monday to Saturday: 09:30 AM – 06:30 PM (IST)<br />
-                    International client queries handled 24/7 via email.
+                    Email enquiries are reviewed during business hours.
                   </p>
                 </div>
               </GlassCard>
@@ -198,7 +207,7 @@ export default function Contact() {
                 <h4 className="font-heading font-bold text-sm text-[#0B2A52]">Official Social Profiles</h4>
                 <div className="flex flex-wrap items-center gap-3 pt-1">
                   <a
-                    href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                    href="https://www.linkedin.com/in/hxrao-overseas-exports-pvt-ltd-2289aa441?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A66C2] text-white hover:bg-[#084e96] transition-all text-xs font-semibold shadow-sm"
@@ -207,7 +216,7 @@ export default function Contact() {
                     <span>LinkedIn</span>
                   </a>
                   <a
-                    href="https://www.instagram.com/hxrao.overseasexports?stkn=MXIwZGU0ajRoZTZidw%3D%3D&utm_source=qr"
+                    href="https://www.instagram.com/hxrao.overseasexports/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white hover:opacity-95 transition-all text-xs font-semibold shadow-sm"
@@ -243,10 +252,10 @@ export default function Contact() {
                       <CheckCircle2 className="w-8 h-8" />
                     </div>
                     <h4 className="font-heading font-extrabold text-2xl text-[#0B2A52] mb-2">
-                      Thank you! Your enquiry has been received.
+                      Please send your enquiry by email.
                     </h4>
                     <p className="text-sm text-slate-600 max-w-md mx-auto">
-                      Our commercial export desk has received your details and will get back to you shortly with specifications and quotation insights.
+                      Your email application should open with the enquiry details. If it does not, please write to overseasexporters.hy@gmail.com.
                     </p>
                     <button
                       type="button"
@@ -401,17 +410,10 @@ export default function Contact() {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      disabled={submitting}
                       className="btn-primary w-full py-4 text-base font-bold shadow-xl inline-flex items-center justify-center gap-2"
                     >
-                      {submitting ? (
-                        <span>Transmitting Enquiry...</span>
-                      ) : (
-                        <>
-                          <span>Send Enquiry</span>
-                          <Send className="w-4 h-4 text-[#2CA6E0]" />
-                        </>
-                      )}
+                      <span>Send Enquiry</span>
+                      <Send className="w-4 h-4 text-[#2CA6E0]" />
                     </button>
                   </form>
                 )}

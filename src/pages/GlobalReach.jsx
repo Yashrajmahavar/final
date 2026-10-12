@@ -22,17 +22,17 @@ export default function GlobalReach() {
   const tradePillars = [
     {
       title: "International Export",
-      desc: "Delivering export-quality commodities, chemical compounds, and recycled materials tailored to cross-border specifications.",
+      desc: "Sourcing commodities, chemical products, and recycled materials according to buyer specifications and destination requirements.",
       icon: Anchor
     },
     {
       title: "Global Sourcing",
-      desc: "Direct integration with reputable mills, certified chemical producers, and aggregators to guarantee consistent supply volumes.",
+      desc: "Sourcing options from mills, chemical producers, and aggregators discussed according to buyer requirements and availability.",
       icon: Globe2
     },
     {
       title: "Reliable Supply",
-      desc: "End-to-end supply chain oversight minimizing delays, ensuring scheduled dispatches, and maintaining intact cargo integrity.",
+      desc: "Coordination of sourcing, packing, and dispatch schedules according to the agreed shipment.",
       icon: Clock
     },
     {
@@ -125,7 +125,7 @@ export default function GlobalReach() {
                 Connecting Markets Across Continents
               </h2>
               <p className="mt-3 text-slate-300 text-sm sm:text-base">
-                Our export logistics originate from strategic hubs in India, orchestrating secure maritime routing and port-to-port dispatches tailored to your regional customs requirements.
+                Export enquiries are handled from Delhi, India. Freight routing and port-to-port dispatch options are discussed according to destination and customs requirements.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function GlobalReach() {
                   </span>
                   <span className="flex items-center gap-2">
                     <span className="w-4 h-0.5 border-t-2 border-dashed border-[#38BDF8]"></span>
-                    <span>Active Export Corridors</span>
+                    <span>Illustrative trade regions</span>
                   </span>
                 </div>
                 <span className="text-sky-300 font-medium">Full Container &amp; Consolidated Logistics</span>
@@ -234,7 +234,7 @@ export default function GlobalReach() {
           <SectionHeading
             eyebrow="TRADE CAPABILITIES"
             title="Logistics Tailored to Commodity Requirements"
-            subtitle="Flexible shipping frameworks ensuring your products arrive on time, within budget, and in flawless condition."
+            subtitle="Flexible shipping options discussed according to product type, quantity, and destination."
             align="center"
           />
 

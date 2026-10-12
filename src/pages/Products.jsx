@@ -178,7 +178,7 @@ export default function Products() {
                       {/* Items / Specification Portfolio */}
                       <div className="mt-6 pt-5 border-t border-slate-100">
                         <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
-                          Available Material Grades &amp; Items:
+                          Typical items we can source:
                         </h4>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                           {product.items.map((item, i) => (
@@ -250,7 +250,7 @@ export default function Products() {
 
               <div className="flex items-center gap-2 text-xs font-bold text-[#1267B1] uppercase tracking-wider mb-2">
                 <ShieldCheck className="w-4 h-4 text-[#2CA6E0]" />
-                <span>Verified Export Grade</span>
+                <span>Product Details</span>
               </div>
 
               <h3 className="font-heading font-extrabold text-2xl text-[#0B2A52]">
@@ -264,7 +264,7 @@ export default function Products() {
               <div className="mt-6 space-y-4">
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                   <h4 className="font-bold text-xs uppercase tracking-wider text-slate-400 mb-2">
-                    Standard Export Items Included
+                    Typical Items We Can Source
                   </h4>
                   <ul className="space-y-1.5 text-sm text-slate-700">
                     {selectedProduct.items.map((item, i) => (
@@ -278,7 +278,7 @@ export default function Products() {
 
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                   <h4 className="font-bold text-xs uppercase tracking-wider text-slate-400 mb-2">
-                    Quality Benchmarks &amp; Features
+                    Features &amp; Sourcing Notes
                   </h4>
                   <ul className="space-y-1.5 text-sm text-slate-700">
                     {selectedProduct.features.map((feat, i) => (
@@ -291,7 +291,7 @@ export default function Products() {
                 </div>
 
                 <div className="p-4 rounded-xl bg-sky-50/60 border border-sky-100 text-xs text-slate-700">
-                  <strong className="text-[#0B2A52] block mb-1">Standard Packaging Details:</strong>
+                  <strong className="text-[#0B2A52] block mb-1">Packaging Options:</strong>
                   {selectedProduct.packaging}
                 </div>
               </div>

@@ -137,7 +137,7 @@ export default function Industries() {
               </h2>
 
               <p className="mt-6 text-base sm:text-lg text-[#64748B] leading-relaxed">
-                Modern international trade demands agility, meticulous attention to product specifications, and uncompromising logistical coordination. At HXRAO Overseas Exports Private Limited, we partner with enterprises across continents to ensure an uninterrupted flow of essential raw materials and finished products.
+                Modern international trade demands attention to product specifications and careful logistical coordination. At HXRAO Overseas Exports, we work with buyers to source essential raw materials and finished products according to confirmed requirements.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -146,8 +146,8 @@ export default function Industries() {
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-sm text-[#0B2A52]">Standardized Quality Inspection</h5>
-                    <p className="text-xs sm:text-sm text-slate-600">Verification of material grades, chemical composition, and physical tolerances prior to dispatch.</p>
+                    <h5 className="font-bold text-sm text-[#0B2A52]">Specification Review</h5>
+                    <p className="text-xs sm:text-sm text-slate-600">Material grades and other specifications are confirmed with buyers before quotation and dispatch.</p>
                   </div>
                 </div>
 
@@ -156,8 +156,8 @@ export default function Industries() {
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-sm text-[#0B2A52]">Export-Grade Seaworthy Packaging</h5>
-                    <p className="text-xs sm:text-sm text-slate-600">Protecting sensitive shipments against humidity, maritime stress, and transit degradation.</p>
+                    <h5 className="font-bold text-sm text-[#0B2A52]">Export Packaging</h5>
+                    <p className="text-xs sm:text-sm text-slate-600">Packing options for humidity, transit, and destination handling are arranged as agreed for each consignment.</p>
                   </div>
                 </div>
 
@@ -166,8 +166,8 @@ export default function Industries() {
                     <CheckCircle2 className="w-4 h-4" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-sm text-[#0B2A52]">Comprehensive Trade Documentation</h5>
-                    <p className="text-xs sm:text-sm text-slate-600">Complete compliance handling with prompt delivery of export manifests and bills of lading.</p>
+                    <h5 className="font-bold text-sm text-[#0B2A52]">Trade Documentation</h5>
+                    <p className="text-xs sm:text-sm text-slate-600">Export documents such as packing lists and bills of lading are arranged according to shipment requirements.</p>
                   </div>
                 </div>
               </div>

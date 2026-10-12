@@ -32,7 +32,6 @@ export default function GetQuote() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
 
   // Prepopulate category if passed via URL
   useEffect(() => {
@@ -72,11 +71,25 @@ export default function GetQuote() {
     e.preventDefault();
     if (!validate()) return;
 
-    setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-    }, 700);
+    const subject = encodeURIComponent(
+      `Quote request: ${formData.productCategory} from ${formData.name}`
+    );
+    const body = encodeURIComponent(
+      [
+        `Name: ${formData.name}`,
+        `Company: ${formData.companyName || '—'}`,
+        `Email: ${formData.email}`,
+        `Phone / WhatsApp: ${formData.phoneWhatsApp}`,
+        `Product category: ${formData.productCategory}`,
+        `Requirement: ${formData.productRequirement}`,
+        `Quantity: ${formData.quantity || '—'}`,
+        `Destination: ${formData.destinationCountry}`,
+        '',
+        formData.additionalMessage || ''
+      ].join('\n')
+    );
+    window.location.href = `mailto:overseasexporters.hy@gmail.com?subject=${subject}&body=${body}`;
+    setSubmitted(true);
   };
 
   const handleChange = (e) => {
@@ -152,10 +165,10 @@ export default function GetQuote() {
                   <CheckCircle2 className="w-10 h-10" />
                 </div>
                 <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-[#0B2A52] mb-3">
-                  Thank you! Your quotation request has been received.
+                  Please send your quote request by email.
                 </h3>
                 <p className="text-slate-600 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-                  Our export commercial desk is analyzing your requested commodity, quantity, and destination port logistics. We will email your formal proforma breakdown shortly.
+                  Your email application should open with the request details. If it does not, please write to overseasexporters.hy@gmail.com with your product, quantity, and destination.
                 </p>
 
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -194,7 +207,7 @@ export default function GetQuote() {
                     Export Commodity Inquiry Form
                   </h2>
                   <p className="mt-2 text-sm text-[#64748B]">
-                    Please share accurate volume, specifications, and destination parameters for prompt CIF/FOB pricing.
+                    Please share volume, specifications, and destination details so we can discuss CIF/FOB options where applicable.
                   </p>
                 </div>
 
@@ -387,20 +400,13 @@ export default function GetQuote() {
                   <div className="pt-4">
                     <button
                       type="submit"
-                      disabled={submitting}
                       className="btn-primary w-full py-4 text-base font-bold shadow-xl inline-flex items-center justify-center gap-2"
                     >
-                      {submitting ? (
-                        <span>Processing Request...</span>
-                      ) : (
-                        <>
-                          <span>Request Quote</span>
-                          <Send className="w-4 h-4 text-[#2CA6E0]" />
-                        </>
-                      )}
+                      <span>Request Quote</span>
+                      <Send className="w-4 h-4 text-[#2CA6E0]" />
                     </button>
                     <p className="text-center text-xs text-slate-400 mt-3">
-                      Confidential commercial handling. No spam. Direct B2B quotation.
+                      Your request opens in your email application and is sent to overseasexporters.hy@gmail.com.
                     </p>
                   </div>
 

@@ -16,14 +16,14 @@ export default function Logo({ variant = 'dark', className = '', size = 'md' }) 
     <Link 
       to="/" 
       className={`inline-flex items-center group focus:outline-none transition-transform duration-200 hover:scale-[1.02] ${className}`}
-      aria-label="HXRAO Overseas Exports Private Limited"
+      aria-label="HXRAO Overseas Exports"
     >
       {isLight ? (
         /* Dark background container (footer): Crisp white frosted glass panel */
         <div className="bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-white/20 transition-all duration-300 group-hover:bg-white group-hover:shadow-xl inline-flex items-center justify-center">
           <img
             src="/logo.png"
-            alt="HXRAO Overseas Exports Private Limited Official Logo"
+            alt="HXRAO Overseas Exports logo"
             className={`${sizeClasses} w-auto object-contain block`}
             loading="eager"
           />
@@ -33,7 +33,7 @@ export default function Logo({ variant = 'dark', className = '', size = 'md' }) 
         <div className="relative inline-flex items-center">
           <img
             src="/logo.png"
-            alt="HXRAO Overseas Exports Private Limited Official Logo"
+            alt="HXRAO Overseas Exports logo"
             className={`${sizeClasses} w-auto object-contain block`}
             loading="eager"
           />

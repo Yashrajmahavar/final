@@ -32,7 +32,7 @@ export default function About() {
     {
       icon: Eye,
       title: "Our Vision",
-      description: "To build a trusted global export network known for quality, reliability and long-term partnerships.",
+      description: "To build a professional global export network known for quality, reliability and long-term partnerships.",
       color: "from-[#0B2A52] to-[#1267B1]"
     },
     {
@@ -46,13 +46,13 @@ export default function About() {
   const advantages = [
     {
       icon: ShieldCheck,
-      title: "Verified Sourcing Channels",
-      desc: "Direct access to evaluated manufacturers and material aggregators who meet stringent grade benchmarks."
+      title: "Careful Sourcing Channels",
+      desc: "Sourcing from manufacturers and material aggregators according to the grades and specifications buyers request."
     },
     {
       icon: FileCheck2,
-      title: "Comprehensive Documentation",
-      desc: "Accurate shipping manifests, certificates of analysis, bills of lading, and export compliance handling."
+      title: "Trade Documentation",
+      desc: "Shipping documents and other paperwork are arranged according to the product, destination, and shipment requirements."
     },
     {
       icon: Globe2,
@@ -134,17 +134,17 @@ export default function About() {
               />
             </div>
             
-            {/* Registered details glass badge */}
+            {/* Head office glass badge */}
             <div className="absolute -bottom-6 -right-4 sm:right-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-white shadow-xl max-w-xs flex items-center gap-3.5">
               <img
                 src="/logo.png"
-                alt="HXRAO Official Logo"
+                alt="HXRAO Overseas Exports logo"
                 className="w-14 h-14 object-contain flex-shrink-0"
               />
               <div>
-                <div className="text-[10px] font-bold text-[#1267B1] uppercase tracking-wider">Registered Entity</div>
+                <div className="text-[10px] font-bold text-[#1267B1] uppercase tracking-wider">Head Office</div>
                 <div className="font-heading font-extrabold text-[#0B2A52] text-xs sm:text-sm mt-0.5 leading-tight">
-                  HXRAO Overseas Exports Private Limited
+                  HXRAO Overseas Exports
                 </div>
                 <div className="text-[11px] text-slate-500 mt-1">
                   Rohini Sector-2, Delhi – 110085
@@ -169,7 +169,7 @@ export default function About() {
             </h2>
 
             <p className="mt-6 text-base sm:text-lg text-[#64748B] leading-relaxed">
-              HXRAO Overseas Exports Private Limited is an import and export company focused primarily on exporting quality products to global markets. We aim to build reliable business relationships through quality products, responsible sourcing and professional service.
+              HXRAO Overseas Exports is an import and export business focused primarily on exporting quality products to global markets. We aim to build reliable business relationships through quality products, responsible sourcing and professional service.
             </p>
 
             <p className="mt-4 text-base text-[#64748B] leading-relaxed">
